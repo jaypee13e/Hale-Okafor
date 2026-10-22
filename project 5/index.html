@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Hale &amp; Okafor | Accounting and advisory for small business</title>
+    <meta
+      name="description"
+      content="Bookkeeping, tax, payroll and advice in plain language. Book a free 20-minute consultation."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header>
+      <div class="w">
+        <a class="logo" href="#top">
+          Hale &amp; Okafor
+          <small>Accounting and advisory</small>
+        </a>
+        <nav aria-label="Main">
+          <a href="#services">Services</a>
+          <a href="#estimate">Fees</a>
+          <a href="#team">Team</a>
+          <a class="btn sm" href="#book">Free consultation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div id="top" class="w hero">
+        <h1>Clear answers for your business finances.</h1>
+        <p>
+          We handle the books, taxes and payroll in plain language, so you can
+          get back to running your business.
+        </p>
+        <a class="btn" href="#book">Book a free 20-minute call</a>
+        <div class="trust">
+          <span>Licensed CPAs and Enrolled Agents</span>
+          <span>Fixed monthly fees</span>
+          <span>Replies within one business day</span>
+        </div>
+      </div>
+
+      <section id="services">
+        <div class="w">
+          <h2>What we do</h2>
+          <p class="lead">
+            Select a service to see what it covers and who it suits.
+          </p>
+          <div id="svc"></div>
+        </div>
+      </section>
+
+      <section id="estimate">
+        <div class="w">
+          <h2>Estimate your monthly fee</h2>
+          <p class="lead">
+            Answer a few questions for a rough range. Your final quote comes
+            after a free consultation.
+          </p>
+          <div class="two">
+            <div class="card">
+              <label for="en">Business structure</label>
+              <select id="en">
+                <option value="sole">Sole proprietor</option>
+                <option value="llc" selected>LLC</option>
+                <option value="corp">Corporation</option>
+              </select>
+
+              <fieldset>
+                <legend>Services you need</legend>
+
+                <label class="ck">
+                  <input type="checkbox" id="c-bk" checked />Bookkeeping
+                </label>
+                <div class="sub" id="s-bk">
+                  <label for="tx">
+                    Transactions per month: <b id="txv"></b>
+                  </label>
+                  <input
+                    id="tx"
+                    type="range"
+                    min="10"
+                    max="500"
+                    step="10"
+                    value="120"
+                  />
+                </div>
+
+                <label class="ck">
+                  <input type="checkbox" id="c-pr" />Payroll
+                </label>
+                <div class="sub" id="s-pr" hidden>
+                  <label for="em">Employees: <b id="emv"></b></label>
+                  <input id="em" type="range" min="1" max="25" value="3" />
+                </div>
+
+                <label class="ck">
+                  <input type="checkbox" id="c-tx" checked />Annual tax return
+                </label>
+
+                <label class="ck">
+                  <input type="checkbox" id="c-ad" />Advisory calls
+                </label>
+                <div class="sub" id="s-ad" hidden>
+                  <label for="hr">Hours per month: <b id="hrv"></b></label>
+                  <input id="hr" type="range" min="1" max="10" value="2" />
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="card" aria-live="polite">
+              <h3>Estimated monthly fee</h3>
+              <div class="big" id="out"></div>
+              <div id="brk"></div>
+              <p class="note">Illustrative demo pricing. Not a quote.</p>
+              <button
+                class="btn"
+                id="use"
+                type="button"
+                style="width: 100%"
+              >
+                Use this in my consultation request
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="team">
+        <div class="w">
+          <h2>Your team</h2>
+          <p class="lead">
+            Real people with real credentials. You’ll always know who to call.
+          </p>
+          <div class="team">
+            <div class="card">
+              <div class="av" aria-hidden="true">PH</div>
+              <h3>Priya Hale, CPA</h3>
+              <p class="note">
+                Partner. Tax planning and small-business strategy for 14 years.
+              </p>
+            </div>
+            <div class="card">
+              <div class="av" aria-hidden="true">DO</div>
+              <h3>Daniel Okafor, EA</h3>
+              <p class="note">
+                Partner. Represents clients before the tax authority and
+                handles complex filings.
+              </p>
+            </div>
+            <div class="card">
+              <div class="av" aria-hidden="true">MT</div>
+              <h3>Mei Tan</h3>
+              <p class="note">
+                Payroll and bookkeeping lead. Keeps your numbers tidy and on
+                time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="w">
+          <h2>How it works</h2>
+          <p class="lead">No jargon, no surprises.</p>
+          <div class="steps">
+            <div class="card">
+              <h3>Free consultation</h3>
+              <p class="note">
+                A 20-minute call to understand your business and your goals.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Clear fixed quote</h3>
+              <p class="note">
+                You get a written monthly fee. No hourly billing games.
+              </p>
+            </div>
+            <div class="card">
+              <h3>We take it from here</h3>
+              <p class="note">
+                Secure onboarding, then regular check-ins and reports you can
+                understand.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="book">
+        <div class="w">
+          <h2>Book your free consultation</h2>
+          <p class="lead">
+            Tell us a little about your business. We’ll confirm a time by
+            email.
+          </p>
+          <div id="done"></div>
+          <form class="card" id="bf">
+            <label for="nm">Full name</label>
+            <input id="nm" required maxlength="60" autocomplete="name" />
+
+            <label for="em2">Email</label>
+            <input id="em2" type="email" required autocomplete="email" />
+
+            <label for="ph">Phone (optional)</label>
+            <input id="ph" type="tel" autocomplete="tel" />
+
+            <label for="bt">Type of business</label>
+            <select id="bt" required>
+              <option value="">Choose one</option>
+              <option>Freelancer or sole proprietor</option>
+              <option>LLC</option>
+              <option>Corporation</option>
+              <option>Non-profit</option>
+              <option>Not started yet</option>
+            </select>
+
+            <fieldset>
+              <legend>Do you currently have an accountant?</legend>
+              <label class="ck">
+                <input type="radio" name="ea" value="yes" required />Yes
+              </label>
+              <label class="ck">
+                <input type="radio" name="ea" value="no" />No
+              </label>
+            </fieldset>
+
+            <label for="dy">Preferred day</label>
+            <select id="dy" required></select>
+
+            <label for="tm">Preferred time</label>
+            <select id="tm">
+              <option>Morning (9 am to 12 pm)</option>
+              <option>Afternoon (12 pm to 5 pm)</option>
+            </select>
+
+            <label for="ms">What do you need help with?</label>
+            <textarea id="ms" rows="4" maxlength="600"></textarea>
+
+            <div class="err" id="err" role="alert"></div>
+            <button class="btn" style="margin-top: 18px">
+              Request consultation
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section id="faq">
+        <div class="w">
+          <h2>Common questions</h2>
+          <details>
+            <summary>Is the first call really free?</summary>
+            <p>
+              Yes. The 20-minute call is free with no obligation. If we’re not
+              the right fit, we’ll point you to someone who is.
+            </p>
+          </details>
+          <details>
+            <summary>How do you keep my data safe?</summary>
+            <p>
+              We use encrypted document sharing and two-step sign-in. We never
+              ask you to email sensitive documents.
+            </p>
+          </details>
+          <details>
+            <summary>Can you help if my books are behind?</summary>
+            <p>
+              Yes. Cleanup projects are common. We’ll quote a one-time fee
+              before we start.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <div class="pitch">
+      <div class="w">
+        <div>
+          <strong>Want a trustworthy website for your firm?</strong>
+          <p>
+            Demo site designed and built by <span id="devname"></span>. Clear,
+            accessible and built to turn visitors into consultations.
+          </p>
+        </div>
+        <a class="btn" id="devmail" href="#">Get a free quote</a>
+      </div>
+    </div>
+
+    <footer class="fo">
+      <div class="w">
+        © Hale &amp; Okafor. This is a demo business made for portfolio
+        purposes. Fees shown are fictional.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
